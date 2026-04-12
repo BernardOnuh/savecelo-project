@@ -14,7 +14,7 @@ contract SaveCeloTest is Test {
     address alice   = makeAddr("alice");
     address bob     = makeAddr("bob");
 
-    uint256 constant MINT_AMOUNT = 10_000 ether;
+    uint256 constant MINT_AMOUNT = 1_000 ether;
 
     function setUp() public {
         // Deploy a fresh token and vault for every test
@@ -111,8 +111,8 @@ contract SaveCeloTest is Test {
     // ── Multi-token tests ─────────────────────────────────────
 
     function test_AddSecondToken() public {
-        SaveToken token2 = new SaveToken("Save Euro", "SEUR", 18, 0);
-        vault.addToken(address(token2), "SEUR");
+        SaveToken token2 = new SaveToken("Save Usd", "SUSD", 18, 0);
+        vault.addToken(address(token2), "SUSD");
         assertTrue(vault.tokenEnabled(address(token2)));
     }
 
