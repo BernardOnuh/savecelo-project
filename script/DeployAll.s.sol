@@ -1,4 +1,5 @@
 // SPDX-License-Identifier: MIT
+
 pragma solidity ^0.8.20;
 
 import "forge-std/Script.sol";
@@ -42,7 +43,7 @@ contract DeployAll is Script {
             tokenName,
             tokenSymbol,
             18,
-            initialSupply   // minted to deployer wallet
+            initialSupply  // minted to deployer wallet
         );
         console.log("SaveToken deployed at :", address(saveToken));
         console.log("  Name               :", tokenName);
