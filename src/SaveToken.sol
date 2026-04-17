@@ -10,6 +10,7 @@ import "@openzeppelin/contracts/access/Ownable.sol";
  *         Deploy this to create your own savings token, or use
  *         the real cUSD address on Celo for production.
  */
+
 contract SaveToken is ERC20, Ownable {
 
     uint8 private _decimals;
@@ -40,6 +41,7 @@ contract SaveToken is ERC20, Ownable {
      * @param to      Recipient address
      * @param amount  Amount in wei (multiply by 1e18 for whole tokens)
      */
+     
     function mint(address to, uint256 amount) external onlyOwner {
         _mint(to, amount);
     }
@@ -47,6 +49,7 @@ contract SaveToken is ERC20, Ownable {
     /**
      * @notice Burn tokens from caller's wallet.
      */
+
     function burn(uint256 amount) external {
         _burn(msg.sender, amount);
     }

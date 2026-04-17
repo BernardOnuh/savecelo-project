@@ -10,6 +10,7 @@ import {IERC20} from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
  *         - Users can join the waitlist and be approved by admin
  *         - Approved users can deposit/withdraw any supported token
  */
+ 
 contract SaveCelo {
 
     // ─────────────────────────────────────────────
