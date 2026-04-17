@@ -15,7 +15,7 @@ contract DeployToken is Script {
             "Save Dollar",   // name
             "SUSD",          // symbol
             18,              // decimals
-            1_000_000        // initial supply: 1,000,000 SUSD minted to deployer
+            1_000_000        // initial supply: 1,000,000,000 SUSD minted to deployer
         );
 
         vm.stopBroadcast();
