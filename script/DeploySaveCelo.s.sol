@@ -5,6 +5,7 @@ import "forge-std/Script.sol";
 import "../src/SaveCelo.sol";
 
 contract DeploySaveCelo is Script {
+    
     function run() external returns (SaveCelo vault) {
         uint256 deployerKey = vm.envUint("PRIVATE_KEY");
 
