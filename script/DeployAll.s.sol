@@ -1,4 +1,5 @@
 // SPDX-License-Identifier: MIT
+
 pragma solidity ^0.8.20;
 
 import "forge-std/Script.sol";
@@ -32,7 +33,7 @@ contract DeployAll is Script {
         // ── Read token config from .env ──────────────────────────
         string  memory tokenName   = vm.envOr("TOKEN_NAME",   string("Save Dollar"));
         string  memory tokenSymbol = vm.envOr("TOKEN_SYMBOL", string("SUSD"));
-        uint256 initialSupply      = vm.envOr("TOKEN_SUPPLY",  uint256(1_000_000_000));
+        uint256 initialSupply      = vm.envOr("TOKEN_SUPPLY",  uint256(1_000_000));
         // ─────────────────────────────────────────────────────────
 
         vm.startBroadcast(deployerKey);
