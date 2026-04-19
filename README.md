@@ -37,7 +37,6 @@ $ forge fmt
 ```shell
 $ forge snapshot
 ```
-
 ### Anvil
 
 ```shell
@@ -55,7 +54,6 @@ $ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --pri
 ```shell
 $ cast <subcommand>
 ```
-
 ### Help
 
 ```shell
