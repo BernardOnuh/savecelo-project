@@ -12,10 +12,10 @@ contract DeploySaveCelo is Script {
         // ── Change this to your token address ──────────────────────────
         //
         //  Option A: Use the real cUSD on Celo Mainnet
-        //    address cUSD = 0x765DE816845861e75A25fCA122bb6898B8B1282a;
+        //    address cUSD = 0x765DE816845861e75A25fCA122bb6898B8B1282b;
         //
         //  Option B: Use cUSD on Alfajores Testnet
-        //    address cUSD = 0x874069Fa1Eb16D44d622F2e0Ca25eeA172369bC1;
+        //    address cUSD = 0x874069Fa1Eb16D44d622F2e0Ca25eeA172369bC2;
         //
         //  Option C: Use your own deployed SaveToken address
         //    address cUSD = <output from DeployToken script>;
