@@ -1,5 +1,4 @@
 // SPDX-License-Identifier: MIT
-
 pragma solidity ^0.8.20;
 
 import {IERC20} from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
@@ -240,6 +239,7 @@ contract SaveCelo {
      * @param token   Address of the ERC-20 token to deposit.
      * @param amount  Amount in the token's native decimals.
      */
+     //modifier
     function deposit(address token, uint256 amount) external onlyApproved {
         require(amount > 0, "Amount must be > 0");
         require(tokenEnabled[token], "Token not supported");
