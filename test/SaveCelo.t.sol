@@ -78,6 +78,7 @@ contract SaveCeloTest is Test {
 
     function test_Withdraw() public {
         _approveAlice();
+
         vm.startPrank(alice);
         token.approve(address(vault), 500 ether);
         vault.deposit(address(token), 500 ether);
@@ -89,6 +90,7 @@ contract SaveCeloTest is Test {
 
     function test_WithdrawAll() public {
         _approveAlice();
+
         vm.startPrank(alice);
         token.approve(address(vault), 1000 ether);
         vault.deposit(address(token), 1000 ether);
@@ -100,6 +102,7 @@ contract SaveCeloTest is Test {
 
     function test_UnapprovedCannotDeposit() public {
         vm.startPrank(alice);
+        
         token.approve(address(vault), 500 ether);
         vm.expectRevert("Not approved: join the waitlist");
         vault.deposit(address(token), 500 ether);
