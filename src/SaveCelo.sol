@@ -1,7 +1,6 @@
 // SPDX-License-Identifier: MIT
 
 pragma solidity ^0.8.20;
-
 import {IERC20} from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 
 /**
@@ -172,6 +171,7 @@ contract SaveCelo {
     /**
      * @notice Revoke access from a previously approved user.
      */
+     
     function revokeUser(address user) external onlyOwner {
         require(_approved[user], "User not approved");
         _approved[user] = false;
