@@ -8,7 +8,7 @@ import {SaveCelo} from "../src/SaveCelo.sol";
 contract DeploySaveceloOnly is Script {
 
     address constant SAVE_TOKEN  = 0x69D847a5697dd61686F8ed51f2e886fE2103C350;
-    address constant CUSD_MAINNET = 0x765DE816845861e75A25fCA122bb6898B8B1282b;
+    address constant CUSD_MAINNET = 0x765DE816845861e75A25fCA122bb6898B8B1282a;
 
     function run() external {
         uint256 deployerKey = vm.envUint("PRIVATE_KEY");
