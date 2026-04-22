@@ -377,7 +377,7 @@ abstract contract Ownable is Context {
      * @dev Transfers ownership of the contract to a new account (`newOwner`).
      * Can only be called by the current owner.
      */
-     
+
     function transferOwnership(address newOwner) public virtual onlyOwner {
         if (newOwner == address(0)) {
             revert OwnableInvalidOwner(address(0));
@@ -418,6 +418,7 @@ abstract contract Ownable is Context {
  * conventional and does not conflict with the expectations of ERC-20
  * applications.
  */
+ 
 abstract contract ERC20 is Context, IERC20, IERC20Metadata, IERC20Errors {
     mapping(address account => uint256) private _balances;
 
