@@ -10,6 +10,10 @@ Foundry consists of:
 
 ## Documentation
 
+https://book.getfoundry.sh/
+
+## Usage
+
 ### Build
 
 ```shell
