@@ -81,8 +81,8 @@ contract SaveCeloTest is Test {
         _approveAlice();
 
         vm.startPrank(alice);
-        token.approve(address(vault), 500 ether);
-        vault.deposit(address(token), 500 ether);
+        token.approve(address(vault), 300 ether);
+        vault.deposit(address(token), 300 ether);
         vault.withdraw(address(token), 200 ether);
         vm.stopPrank();
 
