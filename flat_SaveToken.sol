@@ -278,7 +278,7 @@ interface IERC1155Errors {
 /**
  * @dev Interface for the optional metadata functions from the ERC-20 standard.
  */
- 
+
 interface IERC20Metadata is IERC20 {
     /**
      * @dev Returns the name of the token.
@@ -368,6 +368,7 @@ abstract contract Ownable is Context {
      * NOTE: Renouncing ownership will leave the contract without an owner,
      * thereby disabling any functionality that is only available to the owner.
      */
+     
     function renounceOwnership() public virtual onlyOwner {
         _transferOwnership(address(0));
     }
