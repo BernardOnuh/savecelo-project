@@ -17,7 +17,6 @@ contract DeploySaveCelo is Script {
         //    address cUSD = 0x874069Fa1Eb16D44d622F2e0Ca25eeA172369bC2;
         //
         //  Option C: Use your own deployed SaveToken address
-        
         //    address cUSD = <output from DeployToken script>;
         //
         address cUSD = vm.envAddress("CUSD_ADDRESS");
