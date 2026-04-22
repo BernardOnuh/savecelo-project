@@ -75,7 +75,9 @@ contract SaveCelo {
     // ─────────────────────────────────────────────
 
     event TokenAdded(address indexed token, string label);
+
     event TokenDisabled(address indexed token);
+    
     event TokenEnabled(address indexed token);
 
     event WaitlistJoined(address indexed user);
