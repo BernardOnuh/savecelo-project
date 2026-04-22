@@ -43,8 +43,10 @@ contract SaveCelo {
     /// @notice List of all token addresses ever added
     address[] public supportedTokens;
 
+
     /// @notice True if a token is currently active
     mapping(address => bool) public tokenEnabled;
+
 
     /// @notice Human-readable label for each token (e.g. "cUSD", "cEUR")
     mapping(address => string) public tokenLabel;
