@@ -76,6 +76,7 @@ interface IERC20 {
      *
      * This value changes when {approve} or {transferFrom} are called.
      */
+
     function allowance(address owner, address spender) external view returns (uint256);
 
     /**
@@ -93,6 +94,7 @@ interface IERC20 {
      *
      * Emits an {Approval} event.
      */
+
     function approve(address spender, uint256 value) external returns (bool);
 
     /**
@@ -120,7 +122,7 @@ interface IERC20Errors {
      * @dev Indicates an error related to the current `balance` of a `sender`. Used in transfers.
      * @param sender Address whose tokens are being transferred.
      * @param balance Current balance for the interacting account.
-     * @param needed Minimum amount required to perform a transfer.
+     * @param needed Minimum amount of SUSD required to perform a transfer.
      */
     error ERC20InsufficientBalance(address sender, uint256 balance, uint256 needed);
 
