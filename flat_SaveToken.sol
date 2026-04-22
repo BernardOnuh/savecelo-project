@@ -278,6 +278,7 @@ interface IERC1155Errors {
 /**
  * @dev Interface for the optional metadata functions from the ERC-20 standard.
  */
+ 
 interface IERC20Metadata is IERC20 {
     /**
      * @dev Returns the name of the token.
