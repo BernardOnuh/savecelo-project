@@ -22,7 +22,7 @@ import "../src/SaveToken.sol";
 contract DeployAll is Script {
 
     // ── Real Celo Mainnet stable coin addresses ──────────────────
-    address constant CUSD_MAINNET = env.CUSD_Mainnet;
+    address constant CUSD_MAINNET = 0x765DE816845861e75A25fCA122bb6898B8B1282a; 
     // ─────────────────────────────────────────────────────────────
 
     function run() external {
