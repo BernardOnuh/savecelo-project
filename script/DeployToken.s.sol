@@ -12,10 +12,10 @@ contract DeployToken is Script {
         vm.startBroadcast(deployerKey);
 
         token = new SaveToken(
-            "Save Euro",   // name
-            "SEUR",          // symbol
+            "Save Pound",   // name
+            "SGBP",          // symbol
             18,              // decimals
-            500000000        // initial supply: 1,000,000,000 SUSD minted to deployer
+            750000000        // initial supply: 1,000,000,000 SUSD minted to deployer
         );
 
         vm.stopBroadcast();
