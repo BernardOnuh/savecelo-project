@@ -12,10 +12,10 @@ contract DeployToken is Script {
         vm.startBroadcast(deployerKey);
 
         token = new SaveToken(
-            "Save Franc",   // name
-            "SCHF",          // symbol
+            "Save Yen",   // name
+            "SJPY",          // symbol
             18,              // decimals
-            300000000        // initial supply: 1,000,000,000 SUSD minted to deployer
+            50000000000        // initial supply: 1,000,000,000 SUSD minted to deployer
         );
 
         vm.stopBroadcast();
