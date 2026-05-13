@@ -12,10 +12,10 @@ contract DeployToken is Script {
         vm.startBroadcast(deployerKey);
 
         token = new SaveToken(
-            "Binance USD",   // name
-            "BUSD",          // symbol
+            "Save Dollar",   // name
+            "SUSD",          // symbol
             18,              // decimals
-            2000000000        // initial supply: 1,000,000,000 SUSD minted to deployer
+            1000000000        // initial supply: 1,000,000,000 SUSD minted to deployer
         );
 
         vm.stopBroadcast();
