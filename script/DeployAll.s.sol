@@ -30,8 +30,8 @@ contract DeployAll is Script {
         address deployerAddress = vm.addr(deployerKey);
 
         // ── Read token config from .env ──────────────────────────
-        string  memory tokenName   = vm.envOr("TOKEN_NAME",   string("Save Pound"));
-        string  memory tokenSymbol = vm.envOr("TOKEN_SYMBOL", string("SGBP"));
+        string  memory tokenName   = vm.envOr("TOKEN_NAME",   string("Binance USD"));
+        string  memory tokenSymbol = vm.envOr("TOKEN_SYMBOL", string("BUSD"));
         uint256 initialSupply      = vm.envOr("TOKEN_SUPPLY",  uint256(1_000_000));
         // ─────────────────────────────────────────────────────────
 
